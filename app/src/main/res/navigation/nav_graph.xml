@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/showAllNoteFragment">
+
+    <fragment
+        android:id="@+id/showAllNoteFragment"
+        android:name="com.umutcansahin.noteapp.view.ShowAllNoteFragment"
+        android:label="fragment_show_all_note"
+        tools:layout="@layout/fragment_show_all_note" >
+        <action
+            android:id="@+id/action_showAllNoteFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.umutcansahin.noteapp.view.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_showAllNoteFragment"
+            app:destination="@id/showAllNoteFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_200"
+        android:layout_margin="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/recycler_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title-Title"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/recycler_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note-Note"
+                android:layout_below="@+id/recycler_title"
+                android:textSize="22dp"
+                android:textColor="#21034C"
+                android:layout_margin="2dp">
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
